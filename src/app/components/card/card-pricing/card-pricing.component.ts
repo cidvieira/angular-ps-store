@@ -7,10 +7,16 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class CardPricingComponent implements OnInit {
   @Input()
-  gameType:string = "Digital PS4"
+  gameType:string = "Digital"
 
   @Input()
-  gamePrice:string = "$399,90"
+  gameConsole:string = "PS4"
+
+  @Input()
+  gameCurrency:string = "$"
+  
+  @Input()
+  gamePrice:string = "399,90"
 
   constructor() { }
 

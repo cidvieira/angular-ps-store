@@ -1,14 +1,18 @@
 <div class="card-pricing__container">
-    <div class="card-pricing__title">
-        <h2>Play it now!</h2>
-    </div>
-    <div class="card-pricing__value">
-        <div class="card-pricing__value__console">
-            <span> | </span>
+    <div class="card-pricing__content">
+        <div class="card-pricing__title">
+            <h2>Play it now!</h2>
+        </div>
+        
+        <div class="card-pricing__type__console">            
             <p>{{ gameType }}</p>
-        </div>
-        <div class="card-pricing__value__money">
-            <p class="game-price">{{ gamePrice }}</p>
+            <span> | </span>
+            <p>{{ gameConsole }}</p>
         </div>
     </div>
+
+    <div class="card-pricing__value__money">
+        <p class="game-price"><span class="game-currency">{{ gameCurrency }}</span>{{ gamePrice }}</p>
+    </div>
+    
 </div>
